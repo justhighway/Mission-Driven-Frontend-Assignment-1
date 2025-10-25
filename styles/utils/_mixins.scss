@@ -1,3 +1,8 @@
+@use './theme' as *;
+@use './typography' as *;
+@use './variables' as *;
+@use './colors' as *;
+
 // 기본 폼 input/textarea 스타일
 @mixin input-base {
   width: 100%;

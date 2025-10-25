@@ -1,3 +1,6 @@
+@use '../utils/theme' as *;
+@use '../utils/variables' as *;
+
 html {
   font-size: 62.5%;
 }
@@ -25,12 +28,12 @@ body {
   margin: 0 auto;
   background-color: $bg-primary;
 
-  /* 모바일 기본 (Mobile-First) */
+  /* 모바일 (Mobile-First) */
   max-width: $layout-max-width-mobile;
   padding: 0 $layout-padding-mobile;
 
   /* 태블릿 */
-  @media (min-width: ($bp-mobile + 1px)) {
+  @media (min-width: calc($bp-mobile + 1px)) {
     max-width: 100%;
     padding: 0 $layout-padding-pc;
   }
