@@ -1,0 +1,52 @@
+// Font Weights
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+/* Text Style Mixin */
+
+// 28px bold
+@mixin title-main {
+  font-size: 2.8rem;
+  font-weight: $font-bold;
+}
+
+// 20px medium
+@mixin title-sub {
+  font-size: 2rem;
+  font-weight: $font-medium;
+}
+
+// 18px medium (본문)
+@mixin text-body {
+  font-size: 1.8rem;
+  font-weight: $font-medium;
+}
+
+// 14px medium (캡션)
+@mixin text-caption {
+  font-size: 1.4rem;
+  font-weight: $font-medium;
+}
+
+// 18px semibold (레이블)
+@mixin text-label {
+  font-size: 1.8rem;
+  font-weight: $font-semibold;
+}
+
+// --- 버튼 텍스트 ---
+@mixin btn-text-lg {
+  font-size: 2rem;
+  font-weight: $font-semibold;
+}
+
+@mixin btn-text-md {
+  font-size: 1.8rem;
+  font-weight: $font-semibold;
+}
+
+@mixin btn-text-sm {
+  font-size: 1.6rem;
+  font-weight: $font-semibold;
+}

@@ -1,0 +1,41 @@
+name: CI (Lint & Format Check)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint_and_format_check:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 코드 체크아웃
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. pnpm 설치
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 10
+
+      # 3. Node.js 설치
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '25' # Node.js 버전
+          cache: 'pnpm'
+
+      # 4. 의존성 설치
+      - name: Install dependencies
+        run: pnpm install
+
+      # 5. 린트 검사
+      - name: Run ESLint Check
+        run: pnpm lint
+
+      # 6. 포맷팅 검사
+      - name: Run Prettier Check
+        run: pnpm format:check

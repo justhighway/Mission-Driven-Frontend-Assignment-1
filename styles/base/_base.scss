@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family:
+    'Pretendard',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Apple SD Gothic Neo',
+    'Malgun Gothic',
+    '맑은 고딕',
+    sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  background-color: $bg-global;
+  color: $text-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $bg-primary;
+
+  /* 모바일 기본 (Mobile-First) */
+  max-width: $layout-max-width-mobile;
+  padding: 0 $layout-padding-mobile;
+
+  /* 태블릿 */
+  @media (min-width: ($bp-mobile + 1px)) {
+    max-width: 100%;
+    padding: 0 $layout-padding-pc;
+  }
+
+  /* PC*/
+  @media (min-width: $bp-pc) {
+    max-width: $layout-max-width-pc;
+  }
+}

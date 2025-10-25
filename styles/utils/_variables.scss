@@ -1,0 +1,14 @@
+// Breakpoints
+$bp-mobile: 76.7rem; // 767px
+$bp-pc: 110rem; // 1100px
+
+// Layout Dimensions
+$layout-max-width-pc: 110rem;
+$layout-max-width-mobile: 36rem;
+$layout-padding-pc: 2rem;
+$layout-padding-mobile: 1.6rem;
+
+// 3. Common Units
+$border-radius-base: 0.8rem; // 8px (공통 테두리 둥글기)
+$transition-duration: 0.2s; // 공통 트랜지션 속도
+$transition-duration-fast: 0.1s; // 클릭 등 빠른 반응

@@ -1,0 +1,27 @@
+@import './colors';
+
+// Text Colors
+$text-primary: $color-black; // 기본 텍스트
+$text-secondary: $gray-800; // 버튼 텍스트 등
+$text-label: $gray-700; // 회차정보 레이블
+$text-subtitle: $gray-600; // "최대 2개까지..."
+$text-placeholder: $gray-500; // 입력창 플레이스홀더
+$text-disabled: $gray-500; // 비활성 텍스트
+$text-primary-green: $color-primary; // 활성 텍스트 (초록)
+$text-white: $color-white; // 버튼 위 텍스트
+$text-error: $color-error; // 에러 텍스트
+
+// Background Colors
+$bg-global: $gray-100; // body 배경
+$bg-primary: $color-white; // 기본 페이지 배경 (#app)
+$bg-light: $gray-100; // 회차정보 박스, 이미지 업로드 영역
+$bg-hover: $gray-200; // 버튼 호버 시 배경
+$bg-disabled: $gray-300; // 비활성 버튼 배경
+$bg-active: $color-primary-light; // 활성(선택) 시 배경 (이름 변경)
+
+// Border Colors
+$border-primary: $gray-200; // 기본 외곽선
+$border-hover: $gray-400; // 호버 시 외곽선
+$border-disabled: $gray-300; // 비활성 외곽선
+$border-active: $color-primary; // 활성(선택) 시 외곽선 (초록)
+$border-error: $color-error; // 에러 상태 외곽선

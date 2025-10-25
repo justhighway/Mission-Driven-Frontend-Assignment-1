@@ -1,0 +1,23 @@
+// 원시 변수 정의 (Primitives)
+@import 'utils/colors'; // 순수 색상 값
+@import 'utils/variables'; // 순수 레이아웃 값
+
+// 폰트 정의 (Primitives & Mixins)
+@import 'utils/typography'; // 폰트 굵기, 폰트 믹스인
+
+// 시맨틱 변수 정의 (Aliases)
+@import 'utils/theme';
+
+// 컴포넌트 믹스인 정의
+@import 'utils/mixins';
+
+// 전역 스타일
+@import 'base/reset';
+@import 'base/base';
+
+// 컴포넌트 스타일
+@import 'components/buttons';
+@import 'components/forms';
+// (향후 추가될 컴포넌트들...)
+// @import 'components/header';
+// @import 'components/image-uploader';

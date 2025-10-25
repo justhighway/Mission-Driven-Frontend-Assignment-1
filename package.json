@@ -1,0 +1,27 @@
+{
+  "name": "Mission-Driven-Frontend-Assignment-1",
+  "version": "1.0.0",
+  "description": "미션드리븐 프론트엔드 과제 1",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --cache",
+    "lint:fix": "eslint . --fix --cache",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build:css": "sass styles:dist --style=compressed",
+    "watch:css": "sass --watch styles:dist",
+    "prepare": "lefthook install"
+  },
+  "keywords": [],
+  "author": "Jaehyun Park",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "lefthook": "^2.0.1",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2"
+  }
+}
