@@ -9,6 +9,11 @@ pre-commit:
       glob: '*.js'
       run: pnpm eslint --fix {staged_files} && git add {staged_files}
 
+commit-msg:
+  jobs:
+    - name: check-commit-convention
+      run: node scripts/check-commit-msg.js {1}
+
 pre-push:
   parallel: false
   jobs:
